@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "helvetica";
+  src: url(Helvetica.ttf);
+}
+
+.required {
+  margin-left: 5px;
+  font-size: 22px;
+}
+
+#containerOneH1 {
+  margin-right: 190px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+}
+
+#h2 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: helvetica;
+  color: indigo;
+  font-size: 25px;
+}
+
+#extras {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: helvetica;
+  color: indigo;
+}
+
+body {
+  background-color: darkblue;
+  background-image: url(lgbtqcolors.jpg);
+  background-repeat: no-repeat;
+  background-size: 1410px;
+  background-position-y: -300px;
+  background-position-x: px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.asterisk {
+  margin-right: 10px;
+}
+
+.indicate {
+  display: flex;
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+.containerOne {
+  display: flex;
+  font-family: helvetica;
+  color: indigo;
+  flex-direction: column;
+  margin-top: 550px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1200px;
+}
+
+.formDivOne {
+  margin-left: 30px;
+}
+
+.containerTwo {
+  font-family: "helvetica";
+  height: 120vh;
+  width: 100vh;
+  font-size: 18px;
+  display: flex;
+  margin-left: 1400px;
+  margin-top: -56vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: lightblue;
+}
+
+#containerOneH1 {
+  display: flex;
+  margin-left: 290px;
+  margin-top: -20px;
+  font-size: 60px;
+}
+
+.passwordClass {
+  margin-left: 8px;
+}
+
+.passwordConfirm {
+  margin-left: 3px;
+}
+
+.requiredPasswordAsterisk {
+  margin-left: 10px;
+}
+
+.firstFormDiv {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.emailElement {
+  margin-top: 50px;
+  margin-right: 5px;
+}
+
+#email {
+  margin-right: 15px;
+}
+
+.phoneNumber {
+  margin-left: 5px;
+}
+
+#phoneNumberRequired {
+  margin-left: 10px;
+}
+
+.birthdayContainer {
+  display: flex;
+  justify-content: left;
+  margin-top: 5%;
+  margin-left: 5px;
+}
+
+#birthDate {
+  margin-left: 5px;
+}
+
+.genderContainer {
+  margin-left: 250px;
+  display: flex;
+  justify-content: left;
+}
+
+.genderRequired {
+  margin-left: 10px;
+}
+
+#sexualLabel {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+#sexualOrientation {
+  margin-top: 5px;
+}
