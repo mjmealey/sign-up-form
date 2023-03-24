@@ -1,0 +1,4 @@
+   <div class="textareaContainer">
+                  <p class="comment">Feel free to leave feedback on how we can improve our LGBTQ+ support!</p>
+                  <textarea id="textarea" name="message" maxLength="500"></textarea>
+                </div>
