@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="containerOne">
-    <h1 class="" id="containerOneH1">The LGBTQ+ Support Group</h1>
+    <h1 class="" id="containerOneH1">Rainbow Support</h1>
       <h2 class="div1Element">
         Sign up here for our monthly newsletter and feel free to sign up for our monthly
         extra in the mail! ($0.90 / monthly)
@@ -31,7 +31,7 @@
             name="user_name"
             minlength="5"
             maxlength="20"
-            pattern="^[A-Za-z0-9]{5,20}+$"
+            pattern="^[A-Za-z0-9._!$\\\?]{5,20}$"
             required
           />
     
@@ -88,7 +88,7 @@
             id="phoneNumber"
             name="user_phoneNumber"
             placeholder="(xxx)-xxx-xxxx"
-            pattern="^\d{3}-\d{3}-\d{4}$"
+            pattern="^\d{(3)}-\d{3}-\d{4}$"
             required
             placeholder="(xxx)-xxx-xxxx"
           />
@@ -99,9 +99,8 @@
             id="birthDate"
             name="user_birthDate"
             min="09-09-1901"
-            max="12-12-2023"
+            max="12-31-2023"
             required
-            placeholder="xx-xx-xxxx"
           />
         
           <label class="genderRequired" for="gender"><strong><span class="required" aria-label="required" >*</span></strong> Gender:</label>
@@ -197,7 +196,7 @@
                 </div>
 
               <div class="submit">
-          <button class="submitButton" type="submit">Submit</button>
+          <button id="submitButton" type="submit">Submit</button>
                 
               </div>
             </div>       
