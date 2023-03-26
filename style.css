@@ -461,7 +461,7 @@ body {
   width: 1000px;
   height: 250px;
 }
-.submit > .submitButton {
+.submit > #submitButton {
   height: 20px;
   display: flex;
   margin-top: 100px;
@@ -477,4 +477,10 @@ body {
   border-color: #599fda;
   margin-top: -160px;
   margin-left: 1000px;
+}
+
+
+#submitButton:hover{
+  background-color:steelblue;
+
 }
