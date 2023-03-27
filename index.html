@@ -232,7 +232,278 @@
                   id="cardName"
                   name="user_cardName"
                   pattern="^[a-zA-Z]+$"
+                /><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+  </head>
+  <body>
+    <div class="containerOne">
+    <h1 class="" id="containerOneH1">Rainbow Support</h1>
+      <h2 class="div1Element">
+        Sign up here for our monthly newsletter and feel free to sign up for our monthly
+        extra in the mail! ($0.90 / monthly)
+      </h2>
+      <em><p class="div1Element">Extras include, but are not limited to, plushies, pens, and pencils</p></em>
+      </div>
+      
+      
+      <div class="containerTwo" aria-label="polite">
+      <form id="form">
+        <div class="firstFormDiv">
+          <p class="indicate"><strong class="asterisk">*</strong> indicates a required field below</p>
+          <div class="formDivOne">
+          <label class="usernameLabel" for="username"><strong><span class="required" aria-label="required">*</span></strong> Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="user_name"
+            minlength="5"
+            maxlength="20"
+            pattern="^[A-Za-z0-9._!$\\\?]{5,20}$"
+            required
+          />
+    
+          <label class="passwordClass" for="password"><strong><span class="required" aria-label="required">*</span></strong> Password:</label>
+          <input
+            type="password"
+            class="passwordClass"
+            id="password"
+            name="user_password"
+            minlength="8"
+            maxlength="20"
+            pattern="^[A-Za-z0-9._!$\\\]{8,20}+$"
+            required
+          />
+          
+          <label class="passwordConfirm" for="confirmPassword"><strong><span class="required" aria-label="required">*</span></strong> Confirm Password:</label>
+          <input
+            class="passwordConfirm"
+            type="password"
+            id="confirmPassword"
+            name="user_confirmPassword"
+            minlength="8"
+            maxlength="20"
+            pattern="^[A-Za-z0-9._!$\\\]{8,20}+$"
+            required
+          />
+      </div>
+          
+          <label class="emailElement" for="email"><strong><span class="required" aria-label="required">*</span></strong> Email Address:</label>
+          <input
+            type="email"
+            class="emailElement"
+            id="email"
+            name="user_email_start"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._%-]+\-[a-zA-z]{2,3}$"
+            required
+            placeholder="john@example.com"
+          />
+          
+          <label for="confirmEmail"><strong><span class="required" aria-label="required">*</span></strong> Confirm Email Address:</label>
+          <input
+            type="email"
+            id="confirmEmail"
+            name="user_email_confirm"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._%-]+\-[a-zA-z0]{2,3}$"
+            required
+            placeholder="john@example.com"
+          />
+
+          
+          <label for="class"><strong><span class="required">*</span></strong> Phone Number:</label>
+          <input
+            type="tel"
+            id="phoneNumber"
+            name="user_phoneNumber"
+            placeholder="(xxx)-xxx-xxxx"
+            pattern="^\d{(3)}-\d{3}-\d{4}$"
+            required
+            placeholder="(xxx)-xxx-xxxx"
+          />
+        <div class="birthdayContainer" aria-label="required">  
+          <label class="birthDay" for="birthDate"><strong><span class="required" aria-label="required">*</span></strong> Date of Birth:</label>
+          <input
+            type="date"
+            id="birthDate"
+            name="user_birthDate"
+            min="09-09-1901"
+            max="12-31-2023"
+            required
+          />
+        
+          <label class="genderRequired" for="gender"><strong><span class="required" aria-label="required" >*</span></strong> Gender:</label>
+          <select id="gender" class="genderRequired" name="user_gender">
+            <option class="gender" value="select">Select</option>
+            <option class="gender" value="male">Male</option>
+            <option class="gender" value="female">Female</option>
+            <option class="gender" value="nonbinary">nonBinary</option>
+            <option class="gender" value="genderfluid">Genderfluid</option>
+            <option class="gender" value="genderqueer">Genderqueer</option>
+            <option class="gender" value="agender">Agender</option>
+            <option class="gender" value="androgynous">Androgynous</option>
+            <option class="gender" value="demiGender">Demigender</option>
+            <option class="gender" value="neutrois">Neutrois</option>
+            <option class="gender" value="thirdgender">Third Gender</option>
+            <option class="gender" value="two-spirit">Two-Spirit</option>
+            <option class="gender" value="bigender">Bigender</option>
+            <option class="gender" value="pangender">Pangender</option>
+            <option class="gender" value="transgender">Transgender</option>
+            <option class="gender" value="cisgender">Cisgender</option>
+            <option class="gender" value="intersex">Intersex</option>
+            <option class="gender" value="leaveBlank">Leave blank</option>
+          </select>
+
+          
+          <label id="sexualLabel" for="sexualOrientation"><strong><span class="required" aria-label="required">*</span></strong> Sexual Orientation:</label>
+          <select id="sexualOrientation" class="genderRequired">
+            <option class="gender" value="select">Select</option>
+            <option class="gender" value="heteroSexual">Heterosexual</option>
+            <option class="gender" value="homoSexual">Homosexual</option>
+            <option class="gender" value="biSexual">Bisexual</option>
+            <option class="gender" value="panSexual">Pansexual</option>
+            <option class="gender" value="aSexual">Asexual</option>
+            <option class="gender" value="demiSexual">Demisexual</option>
+            <option class="gender" value="graySexual">Graysexual</option>
+            <option class="gender" value="queer">Queer</option>
+            <option class="gender" value="leaveBlank">Leave blank</option>
+          </select>
+
+          <label id="expressionLabel" for="genderExpression"><strong><span class="required" aria-label="required">*</span></strong> Gender Expression:</label>
+          <select id="genderExpression" class="genderRequired">
+
+         <option value="select">Select</option>
+         <option value="masculine">Masculine</option>
+         <option value="feminine">Feminine</option>
+         <option value="androgynous">Androgynous</option>
+         <option value="genderNonConforming">Gender nonConforming</option>
+         <option value="leaveBlank">Leave blank</option>
+          </select>
+          </div>
+
+          <div id="addressContainer">
+          <label for="homeAddress"><strong><span aria-label="required">*</span></strong> Home Address:</label>
+          <input type="text" id="homeAddress" name="user_homeAddress" pattern="[a-zA-Z0-9\s\-\#']+$" required>
+
+          <label class="zipLabel" for="zipCode"><strong><span aria-label="required">*</span></strong> Zipcode:</label>
+          <input type="text" id="zipCode" name="user_zipCode" pattern="^[0-9]{5}(?:\-[0-9]{4})?$" required>
+          <label class="stateLabel" for="state"><strong><span aria-label="required">*</span></strong> State:
+          <select id="states" required>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District Of Columbia</option> 
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+          </select>  
+          </label>
+
+          <label class="cityLabel" for="city"><strong><span aria-label="required">*</span></strong> City:</label>
+          <input type="text" id="city" name="user_city" pattern="^[a-zA-Z]+(?:[\s-][a-zA-Z.'\s]+)*$">
+        </div>
+        
+
+         <div class="cardContainer">
+            <form id="optional" method="post" action="">
+                <h1 class="card">Card Details <em>(Optional)</em></h1>
+                <strong
+                  ><p class="cardDescription">Only enter your card information if you want extras otherwise you are free to submit the form!</p></strong
+                >
+                <label class="cardTitle" id="cardNameLabel" for="cardName">First Name:</label>
+                <input
+                  type="text"
+                  class="cardTitle"
+                  id="cardName"
+                  name="user_cardName"
+                  pattern="^[a-zA-Z]+$"
                 />
+              <label class="lastCardName" for="lastName">Last Name:</label>
+              <input type="text" id="lastName" name="user_lastCardName" pattern="^[a-zA-Z]+$" minLength="1">
+                <span class="cardType">Card Type:</span>
+                <input class="cardButton" type="radio" id="mastercard" name="user_mastercard" />
+                <label class="mastercardLabel" for="mastercard">Mastercard</label>
+                <input class="cardButton" type="radio" id="ammex" name="user_ammex" />
+                <label class="americanexpressLabel" for="ammex">American Express</label>
+                <input class="cardButton" type="radio" id="visa" name="user_visa" />
+                <label class="visaLabel" for="visa">Visa</label>
+      
+                <label class="numberLabel" for="cardNumber">Card Number:</label>
+                <input class="numberInput" type="text" id="cardNumber" name="user_card_number" pattern="^[0-9.-_\]{16}+$" placeholder="xxxx-xxxx-xxxx-xxxx">
+      
+                <label class="cardExpLabel" for="cardExp">Expiration Date:</label>
+                <input class="cardExpInput" type="date" id="cardExp" name="user_card_exp" pattern="^[0[0-9]|1[0-2]\/[0-9]{2}$">
+                
+                <label class="cvvLabel" for="cvvCode">CVV:</label>
+                <input class="cvvInput" type="card" id="cvvCode" name="user_card_cvv" minLength="3" maxLength="4" pattern="^[0-9]{3,4}$" placeholder="xxx">
+                <label class="paymentAmountLabel" for="paymentAmount">Payment Amount:
+                  <input type="text" class="paymentInput" id="paymentAmount" name="user_payment_amount" pattern="^[0-9]{2,4}$">
+                </label>
+
+                <div class="textareaContainer">
+                  <p class="comment">Feel free to leave feedback on how we can improve our LGBTQ+ support! (Optional)</p>
+                  <textarea id="textarea" name="message" maxLength="500"></textarea>
+                </div>
+
+              <div class="submit">
+          <button id="submitButton" type="submit">Submit</button>
+                
+              </div>
+            </div>       
+      </form>
+    </div>
+  </body>
+</html>
+
               <label class="lastCardName" for="lastName">Last Name:</label>
               <input type="text" id="lastName" name="user_lastCardName" pattern="^[a-zA-Z]+$" minLength="1">
                 <span class="cardType">Card Type:</span>
