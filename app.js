@@ -12,6 +12,11 @@ const cvvCode = document.getElementById("cvvCode");
 const paymentAmount = document.getElementById("paymentAmount");
 const textArea = document.getElementById("textArea");
 const submitButton = document.getElementById("submitButton");
+const form = document.getElementById("form");
+const homeAddress = document.getElementById("homeAddress");
+const zipCode = document.getElementById("zipCode");
+const states = document.getElementById("states");
+const city = document.getElementById("city");
 
 username.addEventListener("input", (e) => {
   if (e.target.id === "username") {
@@ -129,17 +134,11 @@ cardNumber.addEventListener("input", (e) => {
 
 cvvCode.addEventListener("input", (e) => {
   if (e.target.id === "cvvCode") {
-    if (cvvCode.validity.tooShort) {
-      cvvCode.setCustomValidity(
-        "Please double check your cvv code (it should be 3-4 digits)"
-      );
-    } else if (cvvCode.validity.tooLong) {
-      cvvCode.setCustomValidity(
-        "Please double check your cvv code (it should be 3-4 digits) "
-      );
-    }
-  }
-});
+    if(cvvCode.patternMismatch){
+      cvvCode.setCustomValdity("Please enter your cvv code. It should be 3-4 digits")
+    } else{cvvCode.setCustomValidity("")}
+  }});
+ 
 
 textArea.addEventListener("input", (e) => {
   if (e.target.id === "textArea") {
@@ -153,8 +152,61 @@ textArea.addEventListener("input", (e) => {
   }
 });
 
-submitButton.addEventListener("input", (e) => {
-  if (e.target.id === "submitButton") {
-    window.location.href = "https://mjmealey.github.io/thank-you/";
+homeAddress.addEventListener("input", (e) => {
+  if (e.target.id === "homeAddress") {
+    if (homeAddress.validity.patternMismatch) {
+      homeAddress.setCustomValidity(
+        "Please enter the standard format for an address, ex:891 Blockwood Dr./Drive"
+      );
+    } else {
+      homeAddress.setCustomValidity("");
+    }
+  }
+});
+
+zipCode.addEventListener("input", (e) => {
+  if (e.target.id === "zipCode") {
+    if (zipCode.validity.patternMismatch) {
+      zipCode.setCustomValidity(
+        "Please stick to a standard zipcode format ex:12345-12345 or just 12345"
+      );
+    } else {
+      zipCode.setCustomValidity("");
+    }
+  }
+});
+
+city.addEventListener("input", (e) => {
+  if (e.target.id === "city") {
+    if (city.validity.patternMismatch) {
+      city.setCustomValdity("Please enter your city name");
+    } else {
+      city.setCustomValidity("");
+    }
+  }
+});
+
+form.addEventListener("submit", (e) => {
+  if (e.target.id === "form") {
+    e.preventDefault();
+  }
+  if (
+    username.checkValidity() &&
+    password.checkValidity() &&
+    confirmPassword.checkValidity() &&
+    email.checkValidity() &&
+    confirmEmail.checkValidity() &&
+    phoneNumber.checkValidity() &&
+    birthDate.checkValidity() &&
+    cardNumber.checkValidity() && 
+    cvvCode.checkValidity() &&
+    homeAddress.checkValidity() &&
+    zipCode.checkValidity() &&
+    city.checkValidity()
+
+  ) {
+    window.location.href = "https://www.google.com/";
+  } else {
+    confirmPassword.setCustomValidity("");
   }
 });
