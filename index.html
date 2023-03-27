@@ -20,7 +20,7 @@
       
       
       <div class="containerTwo" aria-label="polite">
-      <form id="form" method="post" action="">
+      <form id="form" method="POST" action="https://mjmealey.github.io/thank-you/">
         <div class="firstFormDiv">
           <p class="indicate"><strong class="asterisk">*</strong> indicates a required field below</p>
           <div class="formDivOne">
@@ -65,7 +65,7 @@
             type="email"
             class="emailElement"
             id="email"
-            name="user_email"
+            name="user_email_start"
             pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._%-]+\-[a-zA-z]{2,3}$"
             required
             placeholder="john@example.com"
@@ -75,7 +75,7 @@
           <input
             type="email"
             id="confirmEmail"
-            name="user_email"
+            name="user_email_confirm"
             pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._%-]+\-[a-zA-z0]{2,3}$"
             required
             placeholder="john@example.com"
@@ -150,8 +150,73 @@
          <option value="genderNonConforming">Gender nonConforming</option>
          <option value="leaveBlank">Leave blank</option>
           </select>
-        
           </div>
+
+          <div id="addressContainer">
+          <label for="homeAddress"><strong><span aria-label="required">*</span></strong> Home Address:</label>
+          <input type="text" id="homeAddress" name="user_homeAddress" pattern="[a-zA-Z0-9\s\-\#']+$" required>
+
+          <label class="zipLabel" for="zipCode"><strong><span aria-label="required">*</span></strong> Zipcode:</label>
+          <input type="text" id="zipCode" name="user_zipCode" pattern="^[0-9]{5}(?:\-[0-9]{4})?$" required>
+          <label class="stateLabel" for="state"><strong><span aria-label="required">*</span></strong> State:
+          <select id="states" required>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District Of Columbia</option> 
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+          </select>  
+          </label>
+
+          <label class="cityLabel" for="city"><strong><span aria-label="required">*</span></strong> City:</label>
+          <input type="text" id="city" name="user_city" pattern="^[a-zA-Z]+(?:[\s-][a-zA-Z.'\s]+)*$">
+        </div>
         
 
          <div class="cardContainer">
