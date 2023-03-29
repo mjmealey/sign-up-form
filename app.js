@@ -210,3 +210,4 @@ form.addEventListener("submit", (e) => {
     confirmPassword.setCustomValidity("");
   }
 });
+  
