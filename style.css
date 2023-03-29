@@ -37,11 +37,11 @@
 
 body {
   background-color: darkblue;
-  background-image: url(lgbtqcolors.jpg);
+  background-image: url(rainbowlight.jpg);
   background-repeat: no-repeat;
-  background-size: 1410px;
-  background-position-y: -300px;
-  background-position-x: px;
+  background-size: auto 2200px;
+  background-position-y: -450px;
+  background-position-x: -31px;
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -59,12 +59,17 @@ body {
 .containerOne {
   display: flex;
   font-family: "helvetica";
-  color: indigo;
+  color: white;
+  font-weight: bolder;
+  height: 375px;
+  background-color: rgb(255, 105, 180, 0.9);
   flex-direction: column;
-  margin-top: 550px;
+  margin-top: 480px;
+  position:relative;
+  top:22px;
   justify-content: center;
   align-items: center;
-  margin-right: 1200px;
+  margin-left: -1250px;
 }
 
 .formDivOne {
@@ -73,17 +78,17 @@ body {
 
 .containerTwo {
   font-family: "helvetica";
-  height: 120vh;
+  height: 130vh;
   width: 100vh;
   font-size: 18px;
   display: flex;
   margin-left: 1400px;
-  margin-top: -54vh;
+  margin-top: -61vh;
   color: white;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  background-color: steelblue;
+  background-color: hotpink;
 }
 
 #containerOneH1 {
@@ -91,6 +96,11 @@ body {
   margin-left: 290px;
   margin-top: -20px;
   font-size: 60px;
+}
+
+.div1Element {
+  font-weight: bolder;
+  margin-left: 100px;
 }
 
 /*username styling*/
@@ -138,13 +148,13 @@ body {
   border-color: #599fda;
 }
 
-#confirmPassword:invalid{
-    color:red;
+#confirmPassword:invalid {
+  color: red;
 }
 
-#confirmPassword:valid{
-    color: blue;
-    border-color:blue;
+#confirmPassword:valid {
+  color: blue;
+  border-color: blue;
 }
 
 .passwordConfirm {
@@ -174,47 +184,47 @@ body {
   border-color: #599fda;
 }
 
-#email:invalid{
-    color:red;
+#email:invalid {
+  color: red;
 }
 
-#email:valid{
-    color:blue;
-    border-color:blue;
+#email:valid {
+  color: blue;
+  border-color: blue;
 }
 
-#confirmEmail:hover{
-    background-color:aliceblue;
-    border-color:#599fda;
+#confirmEmail:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
 }
 
-#confirmEmail:invalid{
-    color:red;
+#confirmEmail:invalid {
+  color: red;
 }
 
-#confirmEmail:valid{
-    color:blue;
-    border-color:blue;
+#confirmEmail:valid {
+  color: blue;
+  border-color: blue;
 }
 
-#phoneNumber:hover{
-    background-color:aliceblue;
-    border-color:#599fda;
+#phoneNumber:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
 }
 
-#phoneNumber:invalid{
-    color:red;
+#phoneNumber:invalid {
+  color: red;
 }
 
-#phoneNumber:valid{
-    color:blue;
-    border-color:blue;
+#phoneNumber:valid {
+  color: blue;
+  border-color: blue;
 }
 
 .birthdayContainer {
   display: flex;
   justify-content: left;
-  margin-top: 5%;
+  margin-top: 6%;
   margin-left: 1px;
 }
 
@@ -251,13 +261,93 @@ body {
   margin-top: 3px;
 }
 
+#addressContainer {
+  margin-top: 100px;
+  margin-left: 5px;
+}
+
+#homeAddress:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
+}
+
+#homeAddress:invalid {
+  color: red;
+}
+
+#homeAddress:valid {
+  color: blue;
+  border-color: #599fda;
+}
+
+.zipLabel {
+  margin-left: 15px;
+}
+
+#zipCode:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
+}
+
+#zipCode:invalid {
+  color: red;
+}
+
+#zipCode:valid {
+  color: blue;
+  border-color: #599fda;
+}
+
+.stateLabel {
+  margin-left: 10px;
+}
+
+#states:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
+}
+
+#states:invalid {
+  color: red;
+}
+
+#states:valid {
+  border-color: #599fda;
+}
+
+#states {
+  margin-left: 2px;
+}
+
+.cityLabel {
+  margin-left: 10px;
+}
+
+#city:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
+}
+
+#city:invalid {
+  color: red;
+}
+
+#city:valid {
+  color: blue;
+  border-color: #599fda;
+}
+
+#city {
+  margin-left: 5px;
+}
+
 .cardContainer {
   display: flex;
-  margin-top: 200px;
+  margin-top: 47px;
   width: 1500px;
-  height: 500px;
+  height: 385px;
   margin-left: -10px;
-  background-color: steelblue;
+  background-color: purple;
   color: white;
   position: relative;
   font-family: helvetica;
@@ -271,30 +361,30 @@ body {
   margin-left: 10px;
 }
 
-#cardName:hover{
-    background-color:aliceblue;
-    border-color:#599fda;
+#cardName:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
 }
 
-#cardName:invalid{
-    color:red;
+#cardName:invalid {
+  color: red;
 }
 
-#cardName:valid{
-    color:blue;
+#cardName:valid {
+  color: blue;
 }
 
-#lastName:hover{
-    background-color:aliceblue;
-    border-color:#599fda;
+#lastName:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
 }
 
-#lastName:invalid{
-    color:red;
+#lastName:invalid {
+  color: red;
 }
 
-#lastName:valid{
-    color:blue;
+#lastName:valid {
+  color: blue;
 }
 
 .cardContainer > #cardNameLabel {
@@ -387,35 +477,35 @@ body {
   margin-left: 140px;
   margin-top: -18px;
 }
-.numberInput:hover{
-    background-color:aliceblue;
-    border:#599fda;
+.numberInput:hover {
+  background-color: aliceblue;
+  border: #599fda;
 }
 
-.numberInput:invalid{
-    color:red;
+.numberInput:invalid {
+  color: red;
 }
 
-.numberInput:valid{
-    color:blue;
+.numberInput:valid {
+  color: blue;
 }
 
-#cvvCode:hover{
-    background-color:aliceblue;
-    border-color:#599fda;
+#cvvCode:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
 }
 
-#cvvCode:invalid{
-    color:red;
+#cvvCode:invalid {
+  color: red;
 }
 
-#cvvCode:valid{
-    color:blue;
+#cvvCode:valid {
+  color: blue;
 }
 
-#paymentAmount:hover{
-    background-color:aliceblue;
-    border-color:#599fda;
+#paymentAmount:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
 }
 
 .cardContainer > .paymentAmountLabel {
@@ -423,17 +513,17 @@ body {
   margin-left: 20px;
 }
 
-.paymentInput:hover{
-    background-color:aliceblue;
-    border-color:#599fda;
+.paymentInput:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
 }
 
-.paymentInput:invalid{
-    color:red;
+.paymentInput:invalid {
+  color: red;
 }
 
-.paymentInput:valid{
-    color:blue;
+.paymentInput:valid {
+  color: blue;
 }
 
 .cardContainer > .paymentInput {
@@ -441,9 +531,9 @@ body {
 }
 
 .textareaContainer {
-  background-color: steelblue;
-  height: 500px;
-  margin-top: -80px;
+  background-color: royalblue;
+  height: 625px;
+  margin-top: -195px;
 }
 
 .textareaContainer > .comment {
@@ -451,15 +541,15 @@ body {
   font-family: "helvetica";
   font-weight: bolder;
   font-size: 20px;
-  margin-bottom: 70px;
+  margin-top: 25px;
 }
 
 .textareaContainer > #textarea {
-  margin-top: -45px;
+  margin-top: 30px;
   margin-right: 250px;
   margin-left: 100px;
   width: 1000px;
-  height: 250px;
+  height: 300px;
 }
 .submit > #submitButton {
   height: 20px;
@@ -475,12 +565,16 @@ body {
   padding-bottom: 30px;
   border-style: solid;
   border-color: #599fda;
-  margin-top: -160px;
+  margin-top: -150px;
   margin-left: 1000px;
 }
 
+#submitButton:hover {
+  background-color: steelblue;
+}
 
-#submitButton:hover{
-  background-color:steelblue;
-
+#heart{
+  width:100px;
+  margin-left:15px;
+  margin-top:-20px;
 }
