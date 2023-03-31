@@ -61,12 +61,12 @@ body {
   font-family: "helvetica";
   color: white;
   font-weight: bolder;
-  height: 375px;
+  height: 370px;
   background-color: rgb(255, 105, 180, 0.9);
   flex-direction: column;
   margin-top: 480px;
   position:relative;
-  top:22px;
+  top:16px;
   justify-content: center;
   align-items: center;
   margin-left: -1250px;
@@ -83,7 +83,7 @@ body {
   font-size: 18px;
   display: flex;
   margin-left: 1400px;
-  margin-top: -61vh;
+  margin-top: -64vh;
   color: white;
   display: flex;
   flex-wrap: wrap;
