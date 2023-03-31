@@ -1,0 +1,580 @@
+@font-face {
+  font-family: "helvetica";
+  src: url("sign-up-form/Helvetica.ttf") format("opentype");
+}
+
+.required {
+  margin-left: 5px;
+  font-size: 22px;
+}
+
+#containerOneH1 {
+  margin-right: 190px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+}
+
+#h2 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: helvetica;
+  color: indigo;
+  font-size: 25px;
+}
+
+#extras {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: helvetica;
+  color: indigo;
+}
+
+body {
+  background-color: darkblue;
+  background-image: url(rainbowlight.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 2200px;
+  background-position-y: -450px;
+  background-position-x: -31px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.asterisk {
+  margin-right: 10px;
+}
+
+.indicate {
+  display: flex;
+  margin-left: 2px;
+  font-size: 25px;
+}
+
+.containerOne {
+  display: flex;
+  font-family: "helvetica";
+  color: white;
+  font-weight: bolder;
+  height: 370px;
+  background-color: rgb(255, 105, 180, 0.9);
+  flex-direction: column;
+  margin-top: 480px;
+  position:relative;
+  top:16px;
+  justify-content: center;
+  align-items: center;
+  margin-left: -1250px;
+}
+
+.formDivOne {
+  margin-left: 30px;
+}
+
+.containerTwo {
+  font-family: "helvetica";
+  height: 130vh;
+  width: 100vh;
+  font-size: 18px;
+  display: flex;
+  margin-left: 1400px;
+  margin-top: -64vh;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: hotpink;
+}
+
+#containerOneH1 {
+  display: flex;
+  margin-left: 290px;
+  margin-top: -20px;
+  font-size: 60px;
+}
+
+.div1Element {
+  font-weight: bolder;
+  margin-left: 100px;
+}
+
+/*username styling*/
+
+#username:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
+}
+
+#username:invalid {
+  color: red;
+}
+
+#username:valid {
+  color: blue;
+  border-color: blue;
+}
+
+.usernameLabel {
+  margin-left: -35px;
+}
+
+/*password styling*/
+
+#password:hover {
+  background-color: aliceblue;
+  border-color: #599dfa;
+}
+
+#password:invalid {
+  color: red;
+}
+
+#password:valid {
+  color: blue;
+  border-color: blue;
+}
+
+.passwordClass {
+  margin-left: 3px;
+}
+
+#confirmPassword:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
+}
+
+#confirmPassword:invalid {
+  color: red;
+}
+
+#confirmPassword:valid {
+  color: blue;
+  border-color: blue;
+}
+
+.passwordConfirm {
+  margin-left: 5px;
+}
+
+.requiredPasswordAsterisk {
+  margin-left: 10px;
+}
+
+.firstFormDiv {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+/* email styling */
+.emailElement {
+  margin-top: 68px;
+  margin-right: px;
+}
+
+#email {
+  margin-right: 5px;
+}
+
+#email:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
+}
+
+#email:invalid {
+  color: red;
+}
+
+#email:valid {
+  color: blue;
+  border-color: blue;
+}
+
+#confirmEmail:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
+}
+
+#confirmEmail:invalid {
+  color: red;
+}
+
+#confirmEmail:valid {
+  color: blue;
+  border-color: blue;
+}
+
+#phoneNumber:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
+}
+
+#phoneNumber:invalid {
+  color: red;
+}
+
+#phoneNumber:valid {
+  color: blue;
+  border-color: blue;
+}
+
+.birthdayContainer {
+  display: flex;
+  justify-content: left;
+  margin-top: 6%;
+  margin-left: 1px;
+}
+
+#birthDate {
+  margin-left: 5px;
+}
+
+.genderRequired {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+#sexualLabel {
+  margin-left: 14px;
+  margin-top: -2px;
+}
+#sexualOrientation {
+  margin-top: 3px;
+  height: 20px;
+}
+
+.birthdayContainer > #birthDate {
+  margin-bottom: 8px;
+  margin-left: 10px;
+}
+
+.birthdayContainer > #genderExpression {
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+.birthdayContainer > #expressionLabel {
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+#addressContainer {
+  margin-top: 100px;
+  margin-left: 5px;
+}
+
+#homeAddress:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
+}
+
+#homeAddress:invalid {
+  color: red;
+}
+
+#homeAddress:valid {
+  color: blue;
+  border-color: #599fda;
+}
+
+.zipLabel {
+  margin-left: 15px;
+}
+
+#zipCode:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
+}
+
+#zipCode:invalid {
+  color: red;
+}
+
+#zipCode:valid {
+  color: blue;
+  border-color: #599fda;
+}
+
+.stateLabel {
+  margin-left: 10px;
+}
+
+#states:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
+}
+
+#states:invalid {
+  color: red;
+}
+
+#states:valid {
+  border-color: #599fda;
+}
+
+#states {
+  margin-left: 2px;
+}
+
+.cityLabel {
+  margin-left: 10px;
+}
+
+#city:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
+}
+
+#city:invalid {
+  color: red;
+}
+
+#city:valid {
+  color: blue;
+  border-color: #599fda;
+}
+
+#city {
+  margin-left: 5px;
+}
+
+.cardContainer {
+  display: flex;
+  margin-top: 47px;
+  width: 1500px;
+  height: 385px;
+  margin-left: -10px;
+  background-color: purple;
+  color: white;
+  position: relative;
+  font-family: helvetica;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cardContainer > .card {
+  font-size: 25px;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+#cardName:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
+}
+
+#cardName:invalid {
+  color: red;
+}
+
+#cardName:valid {
+  color: blue;
+}
+
+#lastName:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
+}
+
+#lastName:invalid {
+  color: red;
+}
+
+#lastName:valid {
+  color: blue;
+}
+
+.cardContainer > #cardNameLabel {
+  margin-left: -1080px;
+  margin-top: 100px;
+  margin-right: 1px;
+}
+
+.cardContainer > .lastCardName {
+  margin-top: 101px;
+  margin-left: 15px;
+}
+
+.cardContainer > #lastName {
+  height: 13px;
+  margin-top: 101px;
+  margin-left: 10px;
+}
+
+#cardName {
+  height: 13px;
+  margin-top: 101px;
+  margin-left: 5px;
+}
+
+.cardDescription {
+  margin-top: 30px;
+  margin-left: 10px;
+  font-weight: bolder;
+}
+
+.cardContainer > .cardType {
+  margin-top: 100px;
+  margin-left: 9px;
+}
+
+.cardContainer > .cardButton {
+  margin-bottom: -98px;
+  margin-left: 15px;
+}
+
+.cardContainer > .mastercardLabel {
+  margin-top: 100px;
+  margin-left: 15px;
+}
+.cardContainer > .americanexpressLabel {
+  margin-top: 100px;
+  margin-left: 15px;
+}
+
+.cardContainer > .visaLabel {
+  margin-top: 100px;
+  margin-left: 15px;
+}
+
+.cardContainer > .cardExpLabel {
+  margin-left: 300px;
+  margin-top: -20px;
+}
+
+.cardContainer > .cardExpInput {
+  height: 15px;
+  margin-left: 15px;
+  margin-top: -20px;
+}
+
+.cardContainer > .cvvLabel {
+  margin-left: 35px;
+  margin-top: -18px;
+}
+
+.cardContainer > .cvvInput {
+  height: 12px;
+  width: 30px;
+  margin-left: 8px;
+  margin-bottom: 300px;
+  margin-top: -18px;
+}
+
+.cardContainer > .numberLabel {
+  margin-top: 120px;
+  margin-right: 350px;
+  margin-left: 15px;
+}
+
+.cardContainer > .numberInput {
+  height: 15px;
+  width: 125px;
+  margin-right: 100%;
+  margin-left: 140px;
+  margin-top: -18px;
+}
+.numberInput:hover {
+  background-color: aliceblue;
+  border: #599fda;
+}
+
+.numberInput:invalid {
+  color: red;
+}
+
+.numberInput:valid {
+  color: blue;
+}
+
+#cvvCode:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
+}
+
+#cvvCode:invalid {
+  color: red;
+}
+
+#cvvCode:valid {
+  color: blue;
+}
+
+#paymentAmount:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
+}
+
+.cardContainer > .paymentAmountLabel {
+  margin-top: -18px;
+  margin-left: 20px;
+}
+
+.paymentInput:hover {
+  background-color: aliceblue;
+  border-color: #599fda;
+}
+
+.paymentInput:invalid {
+  color: red;
+}
+
+.paymentInput:valid {
+  color: blue;
+}
+
+.cardContainer > .paymentInput {
+  margin-right: 50px;
+}
+
+.textareaContainer {
+  background-color: royalblue;
+  height: 625px;
+  margin-top: -195px;
+}
+
+.textareaContainer > .comment {
+  margin-left: 20px;
+  font-family: "helvetica";
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.textareaContainer > #textarea {
+  margin-top: 30px;
+  margin-right: 250px;
+  margin-left: 100px;
+  width: 1000px;
+  height: 300px;
+}
+.submit > #submitButton {
+  height: 20px;
+  display: flex;
+  margin-top: 100px;
+  padding: 15px;
+  width: 130px;
+  font-family: "helvetica";
+  color: white;
+  border-radius: 10px;
+  justify-content: center;
+  background-color: #599dfa;
+  padding-bottom: 30px;
+  border-style: solid;
+  border-color: #599fda;
+  margin-top: -150px;
+  margin-left: 1000px;
+}
+
+#submitButton:hover {
+  background-color: steelblue;
+}
+
+#heart{
+  width:100px;
+  margin-left:15px;
+  margin-top:-20px;
+}
